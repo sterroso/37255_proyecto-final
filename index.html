@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Hoja de estilos únicamente para formularios. -->
     <link rel="stylesheet" href="css/forms.css">
+    <!-- Animate On Scroll (AOS) CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Contenedor global del grid. -->
@@ -37,16 +39,16 @@
             <!-- Menú Principal. -->
             <ul class="main-menu">
                 <!-- Inicio. -->
-                <li class="main-menu-item"><a href="#" class="current-page">Inicio</a></li>
+                <li class="main-menu-item"><a href="#" class="current-page scale-up-vert-center-70">Inicio</a></li>
 
                 <!-- Blog. -->
-                <li class="main-menu-item"><a href="#">Blog</a></li>
+                <li class="main-menu-item"><a href="#" class="scale-up-vert-center-70">Blog</a></li>
 
                 <!-- Nosotros. -->
-                <li class="main-menu-item"><a href="#">Nosotros</a></li>
+                <li class="main-menu-item"><a href="#" class="scale-up-vert-center-70">Nosotros</a></li>
 
                 <!-- Contacto. -->
-                <li class="main-menu-item"><a href="#">Contacto</a></li>
+                <li class="main-menu-item"><a href="#" class="scale-up-vert-center-70">Contacto</a></li>
             </ul>
         </nav>
 
@@ -108,7 +110,7 @@
                         fondo definido hasta arriba, y el último, hasta abajo. Sólo el último 
                         fondo puede incluir color de fondo.</p>
                     <a href="pages/blog.html#Usando_multiples_fondos_con_CSS">
-                        <button class="read-more">Leer más</button>
+                        <button class="read-more shadow-drop-center">Leer más</button>
                     </a>
                 </article>
                 <div class="rating">
@@ -134,7 +136,7 @@
                         interactivos, gráficos animados 2D/3D, desplazando máquinas reproductoras 
                         de video, o más, puedes apostar que probablemente JavaScript esté involucrado.</p>
                     <a href="pages/blog.html#JavaScript_Quieres_convertirte_en_un_desarrollador_web_front-end">
-                        <button class="read-more">Leer más</button>
+                        <button class="read-more shadow-drop-center">Leer más</button>
                     </a>
                 </article>
                 <div class="rating">
@@ -160,7 +162,7 @@
                         recomienda trabajar con los primeros pasos de JavaScript y los módulos 
                         de bloques de construcción de JavaScript antes de intentarlo.</p>
                     <a href="pages/blog.html#JavaScript_asincrono">
-                        <button class="read-more">Leer más</button>
+                        <button class="read-more shadow-drop-center">Leer más</button>
                     </a>
                 </article>
                 <div class="rating">
@@ -173,7 +175,7 @@
             </div>
 
             <!-- Recursos para programadores. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Coderhouse. Aprendé haciendo.</h3>
                 <img src="img/clip-coderhouse.png" 
                     alt="Coderhouse | Aprendé haciendo" 
@@ -185,13 +187,13 @@
                         fugiat non.</p>
                     <a href="https://www.coderhouse.com.mx/" 
                     target="_blank" rel="noopener noreferrer">
-                    <button class="read-more">Ir al sitio</button>
+                    <button class="read-more shadow-drop-center">Ir al sitio</button>
                 </a>
                 </article>
             </div>
 
             <!-- Figma: the collaborative interface design tool. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Figma: the collaborative interface design tool.</h3>
                 <img src="img/clip-figma.png" 
                     alt="Figma: the collaborative interface design tool" 
@@ -203,13 +205,13 @@
                         molestiae.</p>
                     <a href="https://www.figma.com/" target="_blank" 
                     rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- Whimsical - Where Great Ideas Take Shape. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Whimsical - Where Great Ideas Take Shape.</h3>
                 <img src="img/clip-whimsical.png" 
                     alt="Whimsical - Where Great Ideas Take Shape" 
@@ -220,14 +222,14 @@
                         quis commodi, doloremque voluptas adipisci fugit facere id qui nemo 
                         quae aut?</p>
                     <a href="https://whimsical.com/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
             
 
             <!-- Balsamiq. Rapid, Effective and Fun Wireframing Software | Balsamiq. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Balsamiq. Rapid, Effective and Fun Wireframing Software.</h3>
                 <img src="img/clip-balsamiq.png" 
                     alt="Balsamiq. Rapid, Effective and Fun Wireframing Software | Balsamiq" 
@@ -238,14 +240,14 @@
                         perspiciatis quas quam enim officiis aliquam repellat ab numquam dolorem 
                         explicabo nam, possimus quia.</p>
                     <a href="https://balsamiq.com/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
             
 
             <!-- Color Palettes for Designers and Artists - Color Hunt. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Color Hunt: Color Palettes for Designers and Artists.</h3>
                 <img src="img/clip-colorhunt.png" 
                     alt="Color Palettes for Designers and Artists - Color Hunt" 
@@ -256,13 +258,13 @@
                         omnis voluptatum, et vero. Suscipit sit aut, illum perferendis 
                         voluptates culpa quis aliquam vero atque!</p>
                     <a href="https://colorhunt.co/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- Coolors - The super fast color palettes generator!. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Coolors: The super fast color palettes generator!</h3>
                 <img src="img/clip-coolors.png" 
                     alt="Coolors - The super fast color palettes generator!" 
@@ -273,14 +275,14 @@
                         iusto rem. Nemo eum recusandae optio aliquam placeat eligendi a. Minus, 
                         eveniet aliquam.</p>
                     <a href="https://coolors.co/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
             
 
             <!-- Contrast Ratio: Easily calculate color contrast ratios. Passing WCAG was never this easy! -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Contrast Ratio: Easily calculate color contrast ratios. 
                     Passing WCAG was never this easy!</h3>
                 <img src="img/clip-contrast_ratio.png" 
@@ -293,13 +295,13 @@
                         quam omnis sit.</p>
                     <a href="https://contrast-ratio.com/" 
                         target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- Irina Delgado - Desarrolladora web en front-end, emprendedora y apasionada por la productividad. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Irina Delgado. Desarrolladora web en front-end, 
                     emprendedora y apasionada por la productividad.</h3>
                 <img src="img/clip-irina_delgado.png" 
@@ -312,15 +314,16 @@
                         exercitationem? Repudiandae alias assumenda maiores harum rerum?</p>
                     <a href="https://www.irinadelgado.com/" 
                         target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- MDN Web Docs. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">MDN Web Docs.</h3>
-                <img src="img/clip-mdn.png" alt="MDN Web Docs" class="resource-image">
+                <img src="img/clip-mdn.png" alt="MDN Web Docs" 
+                    class="resource-image">
                 <article class="text-container">
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Laboriosam necessitatibus vel ex ea omnis ab, consequatur velit, eum, 
@@ -328,13 +331,13 @@
                         recusandae nostrum enim?</p>
                     <a href="https://developer.mozilla.org/" 
                         target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- CSS-Tricks - Tips, Tricks, and Techniques on using Cascading Style Sheets. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">CSS-Tricks: Tips, Tricks, and Techniques on using 
                     Cascading Style Sheets.</h3>
                 <img src="img/clip-css_tricks.png" 
@@ -346,13 +349,13 @@
                         hic repellendus animi doloremque reiciendis, sunt illum dolor ad nostrum 
                         eveniet, totam consequuntur!</p>
                     <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- The ultimate CSS tools for web designers | CSSmatic. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">CSSmatic: The ultimate CSS tools for web designers.</h3>
                 <img src="img/clip-cssmatic.png" 
                     alt="The ultimate CSS tools for web designers | CSSmatic" 
@@ -362,13 +365,13 @@
                         Exercitationem dicta esse enim! Porro fugiat optio sint saepe nam vitae, 
                         aliquid natus pariatur ipsum quam nihil repellendus, quas eaque ea velit?</p>
                     <a href="https://www.cssmatic.com/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- wow.js — Reveal Animations When Scrolling -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">wow.js: Reveal Animations When Scrolling.</h3>
                 <img src="img/clip-wowjs.png" 
                     alt="wow.js — Reveal Animations When Scrolling" 
@@ -379,13 +382,13 @@
                         voluptate rerum perspiciatis asperiores in nesciunt, autem, optio 
                         dolor? Perspiciatis beatae velit nisi non aspernatur.</p>
                     <a href="https://wowjs.uk/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- Free Vectors, Stock Photos & PSD Downloads | Freepik -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Freepik: Free Vectors, Stock Photos & PSD Downloads.</h3>
                 <img src="img/clip-freepik.png" 
                     alt="Free Vectors, Stock Photos & PSD Downloads | Freepik" 
@@ -396,13 +399,13 @@
                         laborum. Quasi consequatur officiis repellat sequi, animi atque 
                         asperiores a voluptas voluptatibus mollitia?</p>
                     <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Flaticon: Vector Icons and Stickers - PNG, SVG, EPS, 
                     PSD and CSS.</h3>
                 <img src="img/clip-flaticon.png" 
@@ -415,13 +418,13 @@
                         laudantium dolorum quod.</p>
                     <a href="https://www.flaticon.com/" 
                         target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- Bootstrap · The most popular HTML, CSS, and JS library in the world. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Bootstrap: The most popular HTML, CSS, and JS library in the world.</h3>
                 <img src="img/clip-bootstrap.png" 
                     alt="Bootstrap · The most popular HTML, CSS, and JS library in the world." 
@@ -433,13 +436,13 @@
                         voluptatum quam? Tenetur, voluptates obcaecati?</p>
                     <a href="https://getbootstrap.com/" target="_blank" 
                         rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
 
             <!-- Sass: Syntactically Awesome Style Sheets. -->
-            <div class="card resource">
+            <div class="card resource" data-aos="fade-up">
                 <h3 class="card-title">Sass: Syntactically Awesome Style Sheets.</h3>
                 <img src="img/clip-sass.png" 
                     alt="Sass: Syntactically Awesome Style Sheets" 
@@ -450,7 +453,7 @@
                         necessitatibus a rerum quod dicta voluptatem iste commodi reiciendis 
                         nemo. Praesentium?</p>
                     <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
-                        <button class="read-more">Ir al sitio</button>
+                        <button class="read-more shadow-drop-center">Ir al sitio</button>
                     </a>
                 </article>
             </div>
@@ -513,5 +516,9 @@
             </hgroup>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
