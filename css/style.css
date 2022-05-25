@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 /* Reset. */
 * {
     margin: 0;
@@ -9,7 +12,7 @@
 
 /* Aspecto general de toda la página. */
 body {
-    font-family: sans-serif;
+    font-family: 'Karla', 'Akshar', sans-serif;
 }
 /* Configuración de los íconos de Google Material Symbols. */
 .material-symbols-outlined {
@@ -50,6 +53,10 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #064663;
+    background-image: url(../img/bg-tech.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
     padding: 1rem;
 }
 
@@ -74,11 +81,6 @@ header {
 .main-title {
     color: #ECB365;
     display: none;
-}
-
-/* Barra de navegación. */
-nav {
-    background-color: #ECB365;
 }
 
 /* Menú principal. */
@@ -341,13 +343,6 @@ footer {
     /* Mostrar el título principal. */
     .main-title {
         display: block;
-    }
-
-    /* El menú de navegación siempre es visible. */
-    nav {
-        position: sticky;
-        top: 0;
-        padding: 0 1rem;
     }
 
     /* El contenedor del botón del menú principal (y todo su contenido) no son visibles. */
