@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Guía WebDev</title>
+    <title>¿Quiénes somos nosotros? | Guía WebDev</title>
     <!-- Liga al CDN de Bootstrap (sólo CSS) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Hoja de estilos general. -->
     <link rel="stylesheet" href="../css/style.css">
+
     <!-- Hoja de estilos únicamente para formularios. -->
     <link rel="stylesheet" href="../css/forms.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Encabezado. -->
@@ -45,40 +48,60 @@
                         <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 
                         <!-- Nosotros. -->
-                        <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Nosotros</a></li>
 
                         <!-- Contacto. -->
-                        <li class="nav-item"><a href="#" class="nav-link active">Contacto</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <main class="row">
-            <form action="#" method="post">
-                <div class="mb-3">
-                    <label for="contactoNombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="contactoNombre" aria-describedby="ayudaNombres">
-                    <div id="ayudaNombres" class="form-text">¿Cómo prefieres que te llamemos?</div>
-                </div>
+            <div class="col-sm-6">
+                <img src="../img/equipo_w800.jpg" class="w-100"
+                    alt="Equipo chocando los puños">
+            </div>
+            <div class="col-sm-6">
+                <h2>¿Quiénes somos?</h2>
 
-                <div class="mb-3">
-                  <label for="contactoEmail" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="contactoEmail" aria-describedby="ayudaEmail">
-                  <div id="ayudaEmail" class="form-text">Con tu correo electrónico podemos responder tus mensajes.</div>
-                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illum architecto sed molestias
+                    aliquid
+                    quos amet, illo deserunt iste eaque modi, aut ducimus mollitia quaerat corrupti nesciunt ullam
+                    corporis
+                    quibusdam!</p>
+                <p>Ea voluptas deleniti corrupti numquam, officia eaque vitae accusantium corporis assumenda sint
+                    dignissimos doloribus consequatur ratione! Velit dolore, consectetur doloribus ratione ipsum itaque
+                    dolores eaque tempore numquam, repellendus sint temporibus.</p>
+            </div>
 
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="contactoRespuestaCheck">
-                  <label class="form-check-label" for="contactoRespuestaCheck">Quiero que me respondan</label>
-                </div>
+            <div class="col-sm-6">
+                <img src="../img/ideas_w800.jpg"  class="w-100"
+                    alt="Dibujo del perfil de una cabeza y focos como ideas">
+            </div>
+            <div class="col-sm-6">
+                <h2>¿Qué hacemos?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat pariatur eligendi laborum ex
+                    sequi, dolor natus quibusdam deserunt tempore minus unde, aliquam quasi ullam explicabo!</p>
+                <p>Voluptate nobis laborum hic? Fugit dolores odio temporibus quaerat explicabo dignissimos amet quia
+                    unde. Sint inventore itaque molestias nesciunt totam eos aut incidunt magnam adipisci.</p>
+                <p>Unde deserunt libero illo dolore error quae sed reiciendis. Et quia iure voluptates dolorum error
+                    doloremque doloribus temporibus laboriosam ducimus. Natus enim consectetur optio excepturi.</p>
+            </div>
 
-                <div class="mb-3">
-                    <textarea name="mensaje" id="contactoMensaje" cols="80" rows="10" class="form-control"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+            <div class="col-sm-6">
+                <img src="../img/alianza_w800.jpg"  class="w-100"
+                    alt="Manos estrechándose con fuerza">
+            </div>
+            <div class="col-sm-6">
+                <h2>Nuestros aliados</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat pariatur eligendi laborum ex
+                    sequi, dolor natus quibusdam deserunt tempore minus unde, aliquam quasi ullam explicabo!</p>
+                <p>Voluptate nobis laborum hic? Fugit dolores odio temporibus quaerat explicabo dignissimos amet quia
+                    unde. Sint inventore itaque molestias nesciunt totam eos aut incidunt magnam adipisci.</p>
+                <p>Unde deserunt libero illo dolore error quae sed reiciendis. Et quia iure voluptates dolorum error
+                    doloremque doloribus temporibus laboriosam ducimus. Natus enim consectetur optio excepturi.</p>
+            </div>
         </main>
 
         <footer class="row">
@@ -86,7 +109,7 @@
             <ul class="footer-menu">
                 <li class="footer-menu-item"><a href="#">Política de Privacidad</a></li>
                 <li class="footer-menu-item"><a href="#">Preguntas Frecuentes</a></li>
-                <li class="footer-menu-item"><a href="#">Contacto</a></li>
+                <li class="footer-menu-item"><a href="contacto.html">Contacto</a></li>
                 <li class="footer-menu-item"><a href="#">Bolsa de Trabajo</a></li>
             </ul>
 
@@ -143,4 +166,5 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

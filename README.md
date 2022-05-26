@@ -1,21 +1,37 @@
-# Consigna
+# Segunda Entrega del Proyecto Final
 
-Agregar git a nuestro proyecto. Crear una rama y agregar animaciones,
-transformaciones y/o gradientes a nuestro proyecto. Mergear este agregado.
-Luego cargar todo en nuestro [repo](https://github.com/sterroso/37255_proyecto-final)
-en [github](https://github.com/).
+Hacer la entrega del Proyecto (dos páginas a elección) adaptado a la vista
+mobile y la vista desktop agregando animaciones. Para el mismo podrán optar
+entre el uso correcto del framework o sin el uso del mismo. La entrega se
+deberá cargar a un repositorio de GitHub público.
 
-## Aspectos a incluir en nuestro entregable
+## Formato
 
-- Agregar a tu proyecto animaciones, transiciones y/o gradientes en una
-rama creada a partir del main.
-- Mergear esta rama al main y luego subir todo a github.
-- De ahora en más, continuarás el trabajo en el
-[repositorio del proyecto](https://github.com/sterroso/37255_proyecto-final)
-directamente en [GitHub](https://github.com/), y utilizarás el
-[Public URL](https://sterroso.github.io/37255_proyecto-final/) para la
-presentación del mismo.
+Link de GitHub. Incluir apellido en el nombre del archivo (ej. "Nombre
+Proyecto - Apellido").
 
-## Ejemplo
+## Sugerencia
 
-[Link al repositorio](https://github.com/camilasperanza88/mi_repositorio)
+Activar comentarios en el archivo.
+
+## Estructura avanzada de la web
+
+### Objetivos generales
+
+1. Realizar una estructura del HTML prólija, limpia, fácil de leer y que no
+tenga errores en sus atributos o en sus valores.
+
+### Objetivos específicos
+
+1. Maquetar dos páginas de tu sitio web. Para esto se puede usar bootstrap
+o grids + flexbox.
+2. Utilizar todas las propiedades CSS necesarias vistas hasta el momento.
+
+### Se debe entregar
+
+- Maquetado de la web: las estructuras maquetan a la web en base al framework
+elegido, haciendo uso de clases utilitarias para armar grillas, elementos
+web y estilos propios del framework, además del HTML de contenido.
+- Páginas: todas las páginas tienen el contenido estructurado y el estilo
+linkeado. También tiene que tener agregadas las diferentes librerías de
+Javascript y CSS pertenecientes al framework.
