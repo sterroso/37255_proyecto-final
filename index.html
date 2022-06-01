@@ -14,10 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <!-- Hoja de estilos general. -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Hoja de estilos únicamente para formularios. -->
-    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
@@ -25,18 +22,18 @@
     <!-- Contenedor global. -->
     <div class="container">
         <!-- Encabezado. -->
-        <header class="row">
+        <header>
             <div class="brand-container">
                 <!-- Logotipo. -->
-                <a class="navbar-brand" href="index.html"><img src="img/coding-logo.png" alt="Logo" 
+                <a class="navbar-brand" href="./"><img src="img/coding-logo.png" alt="Logo" 
                         class="logo"></a>
         
                 <!-- Título de la página. -->
-                <a class="navbar-brand" href="index.html"><h1 class="main-title">Guía WebDev</h1></a>
+                <a class="navbar-brand" href="./"><h1 class="main-title">Guía WebDev</h1></a>
             </div>
         </header>
 
-        <row class="row">
+        <div class="container-fluid">
             <!-- Barra de navegación. -->
             <nav class="row navbar navbar-expand-lg bg-light">
                 <div class="container">
@@ -63,18 +60,18 @@
                     </div>
                 </div>
             </nav>
-        </row>
+        </div>
 
         <!-- Carrusel de Bootstrap! -->
-        <div id="carouselContainer">
+        <div id="carousel-container">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl12">
-                <div id="bannerCarousel" class="carousel slide" data-bs-ride="true">
+                <div id="banner-carousel" class="carousel slide" data-bs-ride="true">
                     <!-- Marcadores de imagen al centro, mitad inferior. -->
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-                        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
     
                     <!-- Colección de imágenes del carrusel. -->
@@ -108,12 +105,12 @@
                         </div>
                     </div>
     
-                    <button type="button" class="carousel-control-prev" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+                    <button type="button" class="carousel-control-prev" data-bs-target="#banner-carousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
     
-                    <button type="button" class="carousel-control-next" data-bs-target="#bannerCarousel" data-bs-slide="next">
+                    <button type="button" class="carousel-control-next" data-bs-target="#banner-carousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -122,13 +119,13 @@
         </div>
 
         <!-- Contenedor del formulario de búsqueda. -->
-        <div class="row search-form-container">
+        <div class="search-form-container">
             <form action="#" id="search-form">
                 <div class="form-query-row">
                     <label for="search-query">Buscar:</label>
                     <input type="search" name="query" id="search-query" required>
                     <input type="submit" value="Buscar" id="search-submit">
-                    <label class="material-symbols-outlined" for="search-submit" id="search-submit-label">search</label>
+                    <label for="search-submit" id="search-submit-label"><i class="bi bi-search"></i></label>
                 </div>
 
                 <fieldset>
@@ -547,7 +544,7 @@
                 </li>
             </ul>
 
-            <hgroup class="attribution">
+            <hgroup class="row">
                 <!-- Reserva de derechos. -->
                 <h3 class="copyright">Todos los derechos reservados. 2022. <strong>VendoMan, S.A. de C.V.</strong></h3>
 

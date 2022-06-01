@@ -1,37 +1,27 @@
-# Segunda Entrega del Proyecto Final
+# Aplicando SASS
 
-Hacer la entrega del Proyecto (dos páginas a elección) adaptado a la vista
-mobile y la vista desktop agregando animaciones. Para el mismo podrán optar
-entre el uso correcto del framework o sin el uso del mismo. La entrega se
-deberá cargar a un repositorio de GitHub público.
+Configurar nuestro proyecto para que soporte SASS. Aplicar SASS en una página
+a elección. Cargar todo en GitHub.
 
 ## Formato
 
-Link de GitHub. Incluir apellido en el nombre del archivo (ej. "Nombre
-Proyecto - Apellido").
+Archivo HTML, CSS y SCSS. Debe tener el nombre "Idea+Apellido".
 
 ## Sugerencia
 
-Activar comentarios en el archivo.
+Carpeta en formato zip o rar, con el/los archivos HTML, CSS y SCSS.
 
-## Estructura avanzada de la web
+## Consigna
 
-### Objetivos generales
+Configurar nuestro proyecto para que soporte SASS. Aplicar los conceptos vistos
+durante la clase de SASS I en una página a elección (podés modificar la sintaxis
+de tu código CSS hecho previamente y adaptarlo a las reglas de SASS). Cargar todo
+en GitHub.
 
-1. Realizar una estructura del HTML prólija, limpia, fácil de leer y que no
-tenga errores en sus atributos o en sus valores.
+## Aspectos a incluir en el entregable
 
-### Objetivos específicos
-
-1. Maquetar dos páginas de tu sitio web. Para esto se puede usar bootstrap
-o grids + flexbox.
-2. Utilizar todas las propiedades CSS necesarias vistas hasta el momento.
-
-### Se debe entregar
-
-- Maquetado de la web: las estructuras maquetan a la web en base al framework
-elegido, haciendo uso de clases utilitarias para armar grillas, elementos
-web y estilos propios del framework, además del HTML de contenido.
-- Páginas: todas las páginas tienen el contenido estructurado y el estilo
-linkeado. También tiene que tener agregadas las diferentes librerías de
-Javascript y CSS pertenecientes al framework.
+- Instala SASS y crea el archivo SCSS para compilarlo en CSS. Envía ambos archivos
+como parte del desafío.
+- Aplicar algún concepto que incorpora SASS: generar los partials a partir de la
+idea de componentes, usar variables para aplicarla como valor a una propiedad y/o
+usar el selector & dentro de un nesting.

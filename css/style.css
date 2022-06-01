@@ -229,11 +229,6 @@ footer {
         display: block;
     }
 
-    /* Imagen dentro del banner. */
-    .banner {
-        width: 100%;
-    }
-
     footer {
         flex-flow: row wrap;
         column-gap: 1rem;
@@ -302,7 +297,6 @@ footer {
 *******************************************************************************/
 @media screen and (min-width: 992px) {
     header {
-        grid-area: h;
         height: 160px;
     }
 
@@ -310,20 +304,6 @@ footer {
         width: 128px;
     }
 
-    /* Animaciones de los elementos del menú (no existe el evento
-        hover en celulares ni tabletas) */
-    @keyframes text-focus-in {
-        0% {
-            filter: blur(12px);
-            opacity: 0;
-        }
-
-        100% {
-            filter: blur(0px);
-            opacity: 1;
-        }
-    }
-    
     .split-area {
         height: 25%;
         max-height: 25vh;
@@ -347,19 +327,4 @@ footer {
         cursor: pointer;
     }
 
-    /* Animación de las imágenes (no existe el evento hover en
-        celulares ni tabletas) */
-    @keyframes shadow-drop-center {
-        0% {
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        }
-
-        100% {
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
-        }
-    }
-
-    .shadow-drop-center:hover {
-        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
 }
