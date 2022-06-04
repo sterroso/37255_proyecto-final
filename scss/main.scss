@@ -1,0 +1,214 @@
+// Hoja principal de estilos.
+
+// Imports
+@import "utilities/resets";
+@import "utilities/colors";
+@import "utilities/mixin";
+
+// Fuentes de Google Fonts: sans-serif (Lato) y serif (Arvo)
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+// Estilos
+body {
+    background: $background-color;
+    color: $text-color;
+    font-family: 'Lato','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .bi {
+        color: $color-yellow-orange;
+    }
+
+    & > .container {
+        background-color: transparent;
+        padding: 0;
+    
+        header {
+            background-color: $color-independence;
+            display: flex;
+            align-items: center;
+    
+            .brand-container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                column-gap: 1rem;
+    
+                .logo {
+                    width: 48px;
+                    margin: 1rem;
+                }
+        
+                .main-title {
+                    display: none;
+                    margin: 1rem;
+                }
+            }
+        }
+
+        nav {
+            background-color: $color-camel;
+        }
+
+        // Contenedor del carrusel de imágenes.
+        #carousel-container {
+            display: none;
+        }
+
+        // Contenedor del formulario de búsqueda.
+        .search-form-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem 1rem 1rem;
+
+            // Formulario de búsqueda.
+            #search-form {
+                max-width: 512px;
+                flex: 1 1 50%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: flex-start;
+                column-gap: 1rem;
+                padding: 1rem 0.5rem;
+                background-color: $color-cambridge-blue;
+                color: $color-eerie-black;
+                font-size: smaller;
+                border-radius: 0.5rem;
+                box-shadow: rgba(27, 32, 33, 0.24) 0px 3px 8px;
+
+                .form-query-row {
+                    flex: 1 1 50%;
+                    padding: 0.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    input {
+                        flex: 1 1 67%;
+                        margin: 0 0.5rem;
+                    }
+                }
+
+                fieldset {
+                    flex: 1 1 50%;
+                    border: none;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                    display: flex;
+                    justify-content: space-around;
+                    font-weight: bold;
+                    column-gap: 1rem;
+
+                    legend {
+                        font-size: 1rem;
+                    }
+                }
+
+                label {
+                    font-weight: bold;
+                }
+
+                input[type='search'] {
+                    border: medium solid $color-eerie-black;
+                    border-radius: 0.5rem;;
+                    padding: 0.25rem;
+                    font-family: monospace;
+                }
+
+                input[type='search']:focus,
+                input[type='search']:hover {
+                    border: medium solid $color-crimson;
+                    background-color: darken($color: white, $amount: 10%)
+                }
+
+                input[type='checkbox'] {
+                    accent-color: $color-eerie-black;
+                }
+
+                input[type='submit'] {
+                    display: none;
+                }
+            }
+        }
+
+        // Espacios entre tarjetas en el cuerpo principal.
+        main {
+            row-gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 0 1rem;
+            justify-content: space-around;
+        }
+
+        // Pié de página.
+        footer {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            row-gap: 2rem;
+            padding: 2rem 1rem 1rem;
+            background-color: $color-charcoal;
+
+            .footer-menu {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                row-gap: 1rem;
+                list-style: none;
+    
+                .footer-menu-item {
+                    a {
+                    font-weight: bold;
+                    text-decoration: none;
+                    }
+    
+                    a:link, a:visited {
+                        color: $color-camel;
+                    }
+                }
+            }
+
+            .social-media {
+                width: 100%;
+                list-style: none;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+            }
+
+            .copyright {
+                text-align: center;
+                font-size: medium;
+                color: $color-cambridge-blue;
+            }
+
+            .author {
+                text-align: center;
+                font-size: small;
+                color: $color-cambridge-blue;
+
+                a {
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 0.25rem;
+                }
+
+                a:link, a:visited {
+                    color: $color-camel;
+                }
+
+                a:active, a:hover, a:focus {
+                    color: $color-eerie-black;
+                    background-color: $color-camel;
+                }
+            }
+        }
+    }
+}
+
+@include mq-medium;
+
+@include mq-large;
