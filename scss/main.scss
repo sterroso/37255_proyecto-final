@@ -4,6 +4,7 @@
 @import "utilities/resets";
 @import "utilities/colors";
 @import "utilities/mixin";
+@import "partials/login";
 
 // Fuentes de Google Fonts: sans-serif (Lato) y serif (Arvo)
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
@@ -11,14 +12,17 @@
 
 // Estilos
 body {
+    // Estilo general de la página.
     background: $background-color;
     color: $text-color;
     font-family: 'Lato','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+    // Estrellas de calificación debajo de las cards.
     .bi {
         color: $color-yellow-orange;
     }
 
+    // Contenedor principal.
     & > .container {
         background-color: transparent;
         padding: 0;
@@ -26,6 +30,7 @@ body {
         header {
             background-color: $color-independence;
             display: flex;
+            justify-content: space-between;
             align-items: center;
     
             .brand-container {
@@ -42,6 +47,20 @@ body {
                 .main-title {
                     display: none;
                     margin: 1rem;
+                }
+            }
+
+            .login-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 100%;
+                font-size: smaller;
+                padding: 1rem;
+
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
                 }
             }
         }
