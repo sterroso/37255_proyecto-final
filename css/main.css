@@ -106,6 +106,12 @@ body .bi {
   color: #ffa630;
 }
 
+body .bi-search {
+  font-weight: bold;
+  color: #1b2021;
+  padding: 0.5rem;
+}
+
 body > .container {
   background-color: transparent;
   padding: 0;
@@ -295,6 +301,31 @@ body > .container main {
   padding: 0 1rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+body > .container main .card, body > .container main .blog-card, body > .container main .resource-card {
+  -webkit-box-shadow: rgba(27, 32, 33, 0.35) 0px 5px 15px;
+          box-shadow: rgba(27, 32, 33, 0.35) 0px 5px 15px;
+}
+
+body > .container main .card .card-body .btn, body > .container main .blog-card .card-body .btn, body > .container main .resource-card .card-body .btn {
+  font-family: 'Arvo', serif;
+  background: #1b2021;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1b2021), to(#2a3d45));
+  background: linear-gradient(bottom, #1b2021, #2a3d45);
+  border: thin solid #2a3d45;
+}
+
+body > .container main .blog-card {
+  background: #b9e28c;
+  background: -webkit-gradient(linear, left top, right bottom, from(#b9e28c), to(#6a8e7f));
+  background: linear-gradient(top left, #b9e28c, #6a8e7f);
+}
+
+body > .container main .resource-card {
+  background: #add2c2;
+  background: -webkit-gradient(linear, left top, right bottom, from(#add2c2), to(#ce5374));
+  background: linear-gradient(top left, #add2c2, #ce5374);
 }
 
 body > .container footer {

@@ -22,6 +22,12 @@ body {
         color: map-get($colors, "yellow-orange");
     }
 
+    .bi-search {
+        font-weight: bold;
+        color: map-get($map: $colors, $key: "eerie-black");
+        padding: 0.5rem;
+    }
+
     // Contenedor principal.
     & > .container {
         background-color: transparent;
@@ -159,6 +165,40 @@ body {
             margin-bottom: 1rem;
             padding: 0 1rem;
             justify-content: space-around;
+
+            // Tarjeta base
+            .card {
+                box-shadow: rgba(27, 32, 33, 0.35) 0px 5px 15px;
+
+                .card-body {
+                    .btn {
+                        font-family: 'Arvo', serif;
+                        background: map-get($map: $colors, $key: "eerie-black");
+                        background: -webkit-linear-gradient(bottom, map-get($map: $colors, $key: "eerie-black"), map-get($map: $colors, $key: "charcoal"));
+                        background: -moz-linear-gradient(bottom, map-get($map: $colors, $key: "eerie-black"), map-get($map: $colors, $key: "charcoal"));
+                        background: linear-gradient(bottom, map-get($map: $colors, $key: "eerie-black"), map-get($map: $colors, $key: "charcoal"));
+                        border: thin solid map-get($map: $colors, $key: "charcoal");
+                    }
+                }
+            }
+
+            .blog-card {
+                @extend .card;
+                // Background.
+                background: map-get($map: $colors, $key: "yellow-green-crayola");
+                background: -webkit-linear-gradient(top left, map-get($map: $colors, $key: "yellow-green-crayola"), map-get($map: $colors, $key: "wintergreen-dream"));
+                background: -moz-linear-gradient(top left, map-get($map: $colors, $key: "yellow-green-crayola"), map-get($map: $colors, $key: "wintergreen-dream"));
+                background: linear-gradient(top left, map-get($map: $colors, $key: "yellow-green-crayola"), map-get($map: $colors, $key: "wintergreen-dream"));
+            }
+
+            .resource-card {
+                @extend .card;
+                // Background.
+                background: map-get($map: $colors, $key: "cambridge-blue");
+                background: -webkit-linear-gradient(top left, map-get($map: $colors, $key: "cambridge-blue"), map-get($map: $colors, $key: "cinnamon-satin"));
+                background: -moz-linear-gradient(top left, map-get($map: $colors, $key: "cambridge-blue"), map-get($map: $colors, $key: "cinnamon-satin"));
+                background: linear-gradient(top left, map-get($map: $colors, $key: "cambridge-blue"), map-get($map: $colors, $key: "cinnamon-satin"));
+            }
         }
 
         // Pié de página.
