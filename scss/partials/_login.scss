@@ -8,6 +8,12 @@
 
     #login-header {
         height: 20vh;
+        background: map-get($map: $colors, $key: "charcoal");
+        background: -webkit-linear-gradient(top, map-get($map: $colors, $key: "charcoal"), map-get($map: $colors, $key: "eerie-black"));
+        background: -moz-linear-gradient(top, map-get($map: $colors, $key: "charcoal"), map-get($map: $colors, $key: "eerie-black"));
+        background: linear-gradient(top, map-get($map: $colors, $key: "charcoal"), map-get($map: $colors, $key: "eerie-black"));
+        color: map-get($map: $colors, $key: "cultured");
+        padding: 0.5rem;
 
         .breadcrumb-container {
             font-size: smaller;
@@ -46,11 +52,30 @@
         align-items: center;
 
         #login-header {
+            padding: 1rem;
             width: 50%;
             flex: 1 1 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
+            background: linear-gradient(0deg, rgba(27, 32, 33, 0.73), rgba(42, 61, 69, 0.73)), url(../../img/bg-login.jpg);
+            background-size: cover;
+            color: map-get($map: $colors, $key: "cultured");
+
+            .breadcrumb-container {
+                .breadcrumb {
+                    font-weight: bold;
+                    color: map-get($map: $colors, $key: "eerie-black");
+
+                    .breadcrumb-item {
+                        color: map-get($map: $colors, $key: "eerie-black");
+                    }
+
+                    .active {
+                        color: map-get($map: $colors, $key: "eerie-black");
+                    }
+                }
+            }
 
             .title-group {
                 margin: auto auto;

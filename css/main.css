@@ -22,6 +22,11 @@
 
 .login-container #login-header {
   height: 20vh;
+  background: #2a3d45;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2a3d45), to(#1b2021));
+  background: linear-gradient(top, #2a3d45, #1b2021);
+  color: #edf2f4;
+  padding: 0.5rem;
 }
 
 .login-container #login-header .breadcrumb-container {
@@ -67,6 +72,7 @@
             align-items: center;
   }
   .login-container #login-header {
+    padding: 1rem;
     width: 50%;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
@@ -79,6 +85,20 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(27, 32, 33, 0.73)), to(rgba(42, 61, 69, 0.73))), url(../../img/bg-login.jpg);
+    background: linear-gradient(0deg, rgba(27, 32, 33, 0.73), rgba(42, 61, 69, 0.73)), url(../../img/bg-login.jpg);
+    background-size: cover;
+    color: #edf2f4;
+  }
+  .login-container #login-header .breadcrumb-container .breadcrumb {
+    font-weight: bold;
+    color: #1b2021;
+  }
+  .login-container #login-header .breadcrumb-container .breadcrumb .breadcrumb-item {
+    color: #1b2021;
+  }
+  .login-container #login-header .breadcrumb-container .breadcrumb .active {
+    color: #1b2021;
   }
   .login-container #login-header .title-group {
     margin: auto auto;
