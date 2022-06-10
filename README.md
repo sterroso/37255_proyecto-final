@@ -1,26 +1,40 @@
-# SASS II + SEO
+# TERCERA ENTREGA DEL PROYECTO FINAL
 
-Aplicar un mapa, un mixin y un extend en nuestro proyecto. Realizar las modificaciones
-necesarias para mejorar el SEO en nuestro sitio.
+El proyecto completo deberá visibilizarse de manera correcta en dispositivos mobile
+y desktop. El mismo deberá estar configurado y con código SASS aplicado. Además
+deberá mostrar uso de la correcta aplicación del SEO. La entrega deberá estar subida
+al servidor.
 
 ## Formato
 
-Archivos HTML y Documento Google Doc. Debe tener el nombre "Idea+Apellido".
+Archivos .json en carpeta comprimida + link al repositorio en GitHub. Incluir apellido
+en el nombre del archivo (ej. "Nombre Proyecto+Apellido").
 
 ## Sugerencia
 
-Carpeta en formato zip o rar, con el/los archivos HTML. Revisar que el documento
-tenga permisos para el acceso.
+Activar comentarios en el archivo.
 
-## Consigna
+## Estructura final de la web
 
-Aplicar un mapa, un mixin y un extend para modificar cualquier elemento de nuestro
-sitio. Realizar las modificaciones necesarias para mejorar el SEO en nuestro sitio.
+**Objetivos generales:**
 
-## Aspectos a incluir en el entregable
+1. Estructura prólija y limpia:
+    > Realizar una estructura del HTML con buena indentación, espacios prólijos, y
+      comentarios siendo usados para comentar secciones y no para ocultar código.
 
-- Declarar un mapa y utilizar un map-get. Extender una clase base y modificarla.
-Generar un mixin para reutlilizar código.
-- Suma keywords, descripción, títulos y encabezado a todas las páginas de tu sitio.
-- Explica en un Google Docs los cambios realizados en el punto anterior, por ejemplo:
-"Agregué éstas keywords", "cambié estos títulos".
+**Objetivos específicos:**
+
+1. Maqueta de la web en base al framework elegido:
+    > Agregar elementos HTML según necesidades de armar contenedores o elementos web
+      determinados, a través del código del framework elegido y la documentación del
+      mismo.
+
+**Se debe entregar:**
+
+- *Maquetado de la web*: las estructuras maquetan a la web en base al framework elegido,
+  haciendo usos de clases utilitarias para armar grillas, elementos web y estilos propios
+  del framework, además del HTML de contenido. En caso de no elegir framework, los
+  elementos respetan una cierta maqueta propia.
+- *Páginas*: todas las páginas tienen el contenido estructurado y el estilo linkeado.
+  También tiene que tener agregadas las diferentes librerías de Javascript y CSS
+  pertinentes al framework.
