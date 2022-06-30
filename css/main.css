@@ -148,6 +148,12 @@ article.post h2.post-title {
 article.post .post-image {
   width: 100%;
 }
+article.post .post-note {
+  background-color: #dff6ff;
+  padding: 2rem 1rem 2rem 1.5rem;
+  border-left: thick solid #06283d;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
 article.post dl dd {
   margin-left: 1rem;
 }
