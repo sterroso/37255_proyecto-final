@@ -55,9 +55,9 @@
         </nav>
 
         <!-- Carrusel de Bootstrap! -->
-        <div id="carouselContainer">
+        <div id="carousel-container">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl12">
-                <div id="bannerCarousel" class="carousel slide" data-bs-ride="true">
+                <div id="banner-carousel" class="carousel slide" data-bs-ride="true">
                     <!-- Marcadores de imagen al centro, mitad inferior. -->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
@@ -115,127 +115,206 @@
             <!-- Usando múltiples fondos con CSS -->
             <article class="post" id="Usando_multiples_fondos_con_CSS">
                 <h2 class="post-title">Usando múltiples fondos con CSS</h2>
-                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis assumenda 
-                    qui id ab cupiditate, molestiae perferendis. Dignissimos sit delectus 
-                    quisquam reprehenderit quia accusamus! Sit rerum illo laborum, consequuntur 
-                    pariatur laboriosam?</p>
+                <p class="post-text">Con CSS3, puedes aplicar múltiple fondos a los elementos. Estos se presentan 
+                uno encima del otro, poniendo el primer fondo definido hasta arriba, y el último, hasta abajo. Sólo 
+                el último fondo puede incluir color de fondo.</p>
                 
-                <p class="post-text">Magnam vitae eligendi consequatur repellat recusandae atque, enim voluptatibus 
-                    ullam accusamus. Enim voluptas asperiores dolor repudiandae sed consequuntur 
-                    eius deleniti, excepturi ducimus. Quo optio commodi dolores dolor, tempora 
-                    voluptas dolorum.</p>
+                <p class="post-text">Especificar fondos múltiples es fácil:</p>
 
-                <p class="post-text">Suscipit dolorum in facere iusto? At possimus sit quos voluptas, itaque aperiam 
-                    beatae rerum animi saepe ipsa in dolores id quaerat ducimus sed culpa soluta 
-                    error consequatur asperiores voluptatum distinctio.</p>
+                <pre class="code-text"><code>
+<span class="style-class-name">.myclass</span> {
+    <span class="style-attribute-key">background</span>: <span class="style-attribute-value">background 1, background 2, ..., backgroundN</span>;
+}
+                </code></pre>
 
-                <p class="post-text">Quia vero ad quis et dignissimos. Aut maiores, eius harum, neque ut labore 
-                    inventore voluptas nobis voluptatem error delectus dignissimos non saepe 
-                    aliquid quis totam! Libero molestias quidem odit quibusdam?</p>
+                <p class="post-text">Puedes hacerlo con la propiedad atajo background y con las propiedades individuales, 
+                excepto background-color. Es decir, las siguientes propiedades pueden ser especificadas como lista, 
+                una por cada fondo: background, background-attachment, background-clip, background-image, 
+                background-origin, background-position, background-repeat, background-size.</p>
 
-                <p class="post-text">Eius, officia ut et nihil saepe eveniet sit iure dolorem pariatur 
-                    voluptatum alias voluptate esse labore. Veritatis consectetur sit 
-                    fugit eaque, porro saepe tempora neque. Magnam dolor voluptatibus 
-                    voluptatum fugit.</p>
+                <h3>Ejemplo</h3>
+
+                <p class="post-text">En este ejemplo, tres fondos son apilados: el logo de Firefox, un gradiente lineal, 
+                y una imagen de burbujas:</p>
+
+                <h4>HTML</h4>
+
+                <pre class="code-text"><code>
+&lt;<span class="tag-start-end">div</span> <span class="tag-attribute-key">class</span>=&quot;<span class="tag-attribute-value">multi_bg_example</span>&quot;&gt;&lt;/<span class="tag-start-end">div</span>&gt;
+                </code></pre>
+
+                <h4>CSS</h4>
+
+                <pre class="code-text"><code>
+<span class="style-class-name">.multi_bg_example</span> &lbrace;
+    <span class="style-attribute-key">width</span>: <span class="style-attribute-value">100</span><span class="style-units">&percnt;</span>;
+    <span class="style-attribute-key">height</span>: <span class="style-attribute-value">400</span><span class="style-units">px</span>;
+    <span class="style-attribute-key">background-image</span>: <span class="style-function-name">url</span>&lpar;<span class="style-function-parameter">https://mdn.mozillademos.org/files/11305/firefox.png</span>&rpar;,
+        <span class="style-function-name">url</span>&lpar;<span class="style-function-parameter">https://mdn.mozillademos.org/files/11307/bubbles.png</span>&rpar;,
+        <span class="style-function-name">linear-gradient</span>&lpar;<span class="style-attribute-value">to right</span>, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">30</span>, <span class="style-function-parameter">75</span>, <span class="style-function-parameter">115</span>, <span class="style-function-parameter">1</span>&rpar;, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">0</span>&rpar;&rpar;;
+    <span class="style-attribute-key">background-repeat</span>: <span class="style-attribute-value">no-repeat</span>, <span class="style-attribute-value">no-repeat</span>, <span class="style-attribute-value">no-repeat</span>;
+    <span class="style-attribute-key">background-position</span>: <span class="style-attribute-value">bottom right</span>, <span class="style-attribute-value">left</span>, <span class="style-attribute-value">right</span>;
+    <span class="style-attribute-key">background</span>: <span class="style-function-name">-moz-linear-gradient</span>&lpar;<span class="style-attribute-value">to right</span>, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">30</span>, <span-style-function-parameter>75</span-style-function-parameter>, <span class="style-function-parameter">115</span>, <span class="style-function-parameter">1</span>&rpar;, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">0</span>&rpar;&rpar;, 
+        <span class="style-function-name">-webkit-gradient</span>&lpar;<span class="style-attribute-value">to right</span>, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">30</span>, <span-style-function-parameter>75</span-style-function-parameter>, <span class="style-function-parameter">115</span>, <span class="style-function-parameter">1</span>&rpar;, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">0</span>&rpar;&rpar;, 
+        <span class="style-function-name">-ms-linear-gradient</span>&lpar;<span class="style-attribute-value">to right</span>, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">30</span>, <span-style-function-parameter>75</span-style-function-parameter>, <span class="style-function-parameter">115</span>, <span class="style-function-parameter">1</span>&rpar;, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">0</span>&rpar;&rpar;, 
+        <span class="style-function-name">linear-gradient</span>&lpar;<span class="style-attribute-value">to right</span>, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">30</span>, <span-style-function-parameter>75</span-style-function-parameter>, <span class="style-function-parameter">115</span>, <span class="style-function-parameter">1</span>&rpar;, <span class="style-function-name">rgba</span>&lpar;<span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">255</span>, <span class="style-function-parameter">0</span>&rpar;&rpar;;
+&rbrace;
+                </code></pre>
                 
-                <img src="../img/starry-sky.jpg" alt="" class="post-image">
+                <h4>Resultado</h4>
+                <div class="multi_bg_example"></div>
 
-                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi autem 
-                    ab necessitatibus perferendis reiciendis quam veritatis, illo odio quisquam placeat, 
-                    vitae nemo. In quam temporibus exercitationem minima nobis magni? Hic?</p>
+                <p class="post-text">Como puedes ver aquí, el logo de Firefox (primero enlistado) está hasta arriba, 
+                seguido por el gradiente, que está presentado encima del fondo de burbujas. Cada subpropiedad 
+                subsecuente (background-repeat y background-position) aplican a los fondos correspondientes. Así, 
+                el primer valor en la lista para background-repeat aplica al primer fondo (el de hasta arriba), etc.</p>
 
-                <p class="post-text">Aut doloribus maiores quaerat consequuntur sint enim alias, culpa, 
-                    deleniti iste necessitatibus laboriosam expedita minus eveniet perferendis accusamus 
-                    sequi autem? Tenetur laborum sed excepturi modi praesentium, magnam nam? Deserunt, 
-                    odio.</p>
-
-                <p class="post-text">Debitis unde fuga itaque quisquam pariatur recusandae animi, 
-                    explicabo nam, nemo ut non, tempore quod eveniet maxime? Ex culpa nobis fugiat rem. 
-                    Pariatur numquam quae accusamus quo non harum nihil.</p>
             </article>
 
             <!-- JavaScript. ¿Quieres convertirte en un desarrollador web front-end? -->
             <article class="post" id="JavaScript_Quieres_convertirte_en_un_desarrollador_web_front-end">
                 <h2 class="post-title">JavaScript. ¿Quieres convertirte en un desarrollador web front-end?</h2>
-                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis assumenda 
-                    qui id ab cupiditate, molestiae perferendis. Dignissimos sit delectus 
-                    quisquam reprehenderit quia accusamus! Sit rerum illo laborum, consequuntur 
-                    pariatur laboriosam?</p>
                 
-                <p class="post-text">Magnam vitae eligendi consequatur repellat recusandae atque, enim voluptatibus 
-                    ullam accusamus. Enim voluptas asperiores dolor repudiandae sed consequuntur 
-                    eius deleniti, excepturi ducimus. Quo optio commodi dolores dolor, tempora 
-                    voluptas dolorum.</p>
+                <img src="../img/developer.jpg" alt="Jóven afroamericano programando." class="post-image">
 
-                <p class="post-text">Suscipit dolorum in facere iusto? At possimus sit quos voluptas, itaque aperiam 
-                    beatae rerum animi saepe ipsa in dolores id quaerat ducimus sed culpa soluta 
-                    error consequatur asperiores voluptatum distinctio.</p>
+                <p class="post-text">JavaScript es un lenguaje de programación que te permite implementar cosas complejas 
+                en páginas web. Cada vez que una página web hace algo más que sentarse ahí y mostrar información estática 
+                para que la veas — mostrando actualizaciones de contenido oportunas, mapas interactivos, gráficos animados 
+                2D/3D, desplazando máquinas reproductoras de video, o más, puedes apostar que probablemente JavaScript 
+                esté involucrado.</p>
 
-                <p class="post-text">Quia vero ad quis et dignissimos. Aut maiores, eius harum, neque ut labore 
-                    inventore voluptas nobis voluptatem error delectus dignissimos non saepe 
-                    aliquid quis totam! Libero molestias quidem odit quibusdam?</p>
-
-                <p class="post-text">Eius, officia ut et nihil saepe eveniet sit iure dolorem pariatur 
-                    voluptatum alias voluptate esse labore. Veritatis consectetur sit 
-                    fugit eaque, porro saepe tempora neque. Magnam dolor voluptatibus 
-                    voluptatum fugit.</p>
+                <h3>Prerrequisitos</h3>
                 
-                <img src="../img/sunrise.jpg" alt="" class="post-image">
+                <p class="post-text">Se puede decir que JavaScript es más difícil de aprender que tecnologías relacionadas 
+                como HTML y CSS. Antes de intentar aprender JavaScript, se recomienda encarecidamente que te familiarices 
+                con al menos estas dos tecnologías primero, y quizás también con otras. Comienza trabajando con los 
+                siguientes módulos:</p>
 
-                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi autem 
-                    ab necessitatibus perferendis reiciendis quam veritatis, illo odio quisquam placeat, 
-                    vitae nemo. In quam temporibus exercitationem minima nobis magni? Hic?</p>
+                <ul>
+                    <li>Comenzando con la Web</li>
+                    <li>Introducción a HTML</li>
+                    <li>Introducción a CSS</li>
+                </ul>
 
-                <p class="post-text">Aut doloribus maiores quaerat consequuntur sint enim alias, culpa, 
-                    deleniti iste necessitatibus laboriosam expedita minus eveniet perferendis accusamus 
-                    sequi autem? Tenetur laborum sed excepturi modi praesentium, magnam nam? Deserunt, 
-                    odio.</p>
+                <p class="post-text">Tener experiencia previa con otros lenguajes de programación también puede ayudar.</p>
 
-                <p class="post-text">Debitis unde fuga itaque quisquam pariatur recusandae animi, 
-                    explicabo nam, nemo ut non, tempore quod eveniet maxime? Ex culpa nobis fugiat rem. 
-                    Pariatur numquam quae accusamus quo non harum nihil.</p>
+                <p class="post-text">Después de familiarizarte con los conceptos básicos de JavaScript, deberías estar 
+                en condiciones de aprender sobre temas más avanzados, por ejemplo:</p>
+
+                <ul>
+                    <li>JavaScript en profundidad, como se enseña en nuestra guía de JavaScript</li>
+                    <li>APIs web</li>
+                </ul>
+
+                <h3>Móduos</h3>
+
+                <p class="post-text">Este tema contiene los siguientes módulos, en un orden sugerido para trabajar con ellos.</p>
+
+                <dl>
+                    <dt>Primeros pasos en JavaScript</dt>
+                    <dd>En nuestro primer módulo de JavaScript, primero respondemos algunas preguntas fundamentales como "¿qué 
+                        es JavaScript?", "¿Cómo se ve?" y "¿qué puede hacer?", antes de pasar a guiarte por tu primera experiencia 
+                        práctica de escribir JavaScript. Después de eso, discutimos en detalle algunas características clave de 
+                        JavaScript, tal como variables, cadenas, números y arreglos.</dd>
+
+                    <dt>Bloques de Construcción de JavaScript</dt>
+                    <dd>En este módulo, continuamos con nuestra cobertura de todas las características fundamentales clave de 
+                        JavaScript, centrando nuestra atención en los tipos de bloques de código que se encuentran comúnmente, 
+                        como declaraciones condicionales, bucles, funciones y eventos. Ya has visto estas cosas en el curso, pero 
+                        solo de pasada; aquí lo discutiremos todas explícitamente.</dd>
+                    
+                    <dt>Introducción a los objetos JavaScript</dt>
+                    <dd>En JavaScript, la mayoría de las cosas son objetos, desde las características principales de JavaScript 
+                        como cadenas y arreglos hasta las APIs del navegador creadas sobre JavaScript. Incluso puedes crear tus 
+                        propios objetos para encapsular funciones y variables relacionadas en paquetes eficientes. Es importante 
+                        comprender la naturaleza orientada a objetos de JavaScript si deseas ir más allá con tu conocimiento del 
+                        lenguaje y escribir código más eficiente, por lo tanto, te proporcionamos este módulo para ayudarte. Aquí 
+                        enseñamos la teoría y la sintaxis de objetos en detalle, vemos cómo crear tus propios objetos y explicamos 
+                        qué son los datos JSON y cómo trabajar con ellos.</dd>
+                    
+                    <dt>JavaScript asíncrono</dt>
+                    <dd>En este módulo, echamos un vistazo a JavaScript asíncrono, por qué es importante y cómo se puede utilizar 
+                        para manejar de forma eficaz posibles operaciones de bloqueo, como la obtención de recursos desde un servidor.</dd>
+                    
+                    <dt>APIs web de lado del cliente</dt>
+                    <dd>Al escribir JavaScript de lado del cliente para sitios web o aplicaciones, no irás muy lejos antes de comenzar 
+                        a usar las APIs — interfaces para manipular diferentes aspectos del navegador y el sistema operativo en el que 
+                        se ejecuta el sitio, o incluso datos de otros sitios web o servicios. En este módulo, exploraremos qué son las 
+                        APIs y cómo utilizar algunas de las APIs más populares que encontrarás a menudo en tu trabajo de desarrollo.</dd>
+                </dl>
+                
+                <h3>Resolver problemas comunes de JavaScript</h3>
+
+                <p class="post-text">Usar JavaScript para resolver problemas comunes proporciona enlaces a secciones de contenido que 
+                explican cómo usar JavaScript para resolver problemas muy comunes al crear una página web.</p>
             </article>
 
             <!-- JavaScript asíncrono -->
             <article class="post" id="JavaScript_asincrono">
                 <h2 class="post-title">JavaScript asíncrono</h2>
-                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis assumenda 
-                    qui id ab cupiditate, molestiae perferendis. Dignissimos sit delectus 
-                    quisquam reprehenderit quia accusamus! Sit rerum illo laborum, consequuntur 
-                    pariatur laboriosam?</p>
+
+                <img src="../img/cloud-app.jpg" alt="Dispositivo móvil ejecutando una aplicación en la nube." class="post-image">
+
+                <p class="post-text">En este módulo echamos un vistazo a JavaScript asíncrono, por qué es importante y cómo se puede 
+                utilizar para manejar eficazmente las posibles operaciones de bloqueo, como recuperar recursos desde un servidor.</p>
+
+                <h3>Prerrequisitos</h3>
                 
-                <p class="post-text">Magnam vitae eligendi consequatur repellat recusandae atque, enim voluptatibus 
-                    ullam accusamus. Enim voluptas asperiores dolor repudiandae sed consequuntur 
-                    eius deleniti, excepturi ducimus. Quo optio commodi dolores dolor, tempora 
-                    voluptas dolorum.</p>
+                <p class="post-text">JavaScript asíncrono es un tema bastante avanzado, y se recomienda trabajar con los primeros 
+                pasos de JavaScript y los módulos de bloques de construcción de JavaScript antes de intentarlo.</p>
 
-                <p class="post-text">Suscipit dolorum in facere iusto? At possimus sit quos voluptas, itaque aperiam 
-                    beatae rerum animi saepe ipsa in dolores id quaerat ducimus sed culpa soluta 
-                    error consequatur asperiores voluptatum distinctio.</p>
+                <p class="post-text">i no está familiarizado con el concepto de programación asincrónica, definitivamente debe 
+                comenzar con el artículo Conceptos generales de programación asincrónica en este módulo. Si es así, probablemente 
+                pueda pasar al módulo Introducción a JavaScript asíncrono.</p>
 
-                <p class="post-text">Quia vero ad quis et dignissimos. Aut maiores, eius harum, neque ut labore 
-                    inventore voluptas nobis voluptatem error delectus dignissimos non saepe 
-                    aliquid quis totam! Libero molestias quidem odit quibusdam?</p>
-
-                <p class="post-text">Eius, officia ut et nihil saepe eveniet sit iure dolorem pariatur 
-                    voluptatum alias voluptate esse labore. Veritatis consectetur sit 
-                    fugit eaque, porro saepe tempora neque. Magnam dolor voluptatibus 
-                    voluptatum fugit.</p>
+                <p class="post-text post-note">Nota: Si está trabajando en una computadora / tableta / otro dispositivo donde no 
+                tiene la capacidad de crear sus propios archivos, puede probar (la mayoría de) los ejemplos de código en un programa 
+                de codificación en línea como JSBin o Glitch.</p>
                 
-                <img src="../img/sea-storm.jpg" alt="" class="post-image">
+                <h3>Guías</h3>
 
-                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi autem 
-                    ab necessitatibus perferendis reiciendis quam veritatis, illo odio quisquam placeat, 
-                    vitae nemo. In quam temporibus exercitationem minima nobis magni? Hic?</p>
+                <dl>
+                    <dt>Conceptos generales de programación asincrónica</dt>
+                    <dd>En este artículo revisaremos una serie de conceptos importantes relacionados con la programación asincrónica 
+                        y cómo se ve esto en los navegadores web y JavaScript. Debe comprender estos conceptos antes de trabajar en 
+                        los otros artículos del módulo.</dd>
+                    
+                    <dt>Introduciendo JavaScript asincrónico</dt>
+                    <dd>En este artículo recapitulamos brevemente los problemas asociados con JavaScript síncrono, y echamos un primer 
+                        vistazo a algunas de las diferentes técnicas de JavaScript asíncrono que encontrarás, mostrando cómo pueden 
+                        ayudarnos a resolver tales problemas.</dd>
+                    
+                    <dt>JavaScript asíncrono cooperativo: tiempos de espera e intervalos</dt>
+                    <dd>Aquí observamos los métodos tradicionales que JavaScript tiene disponibles para ejecutar código de forma 
+                        asíncrona después de que haya transcurrido un período de tiempo establecido, o en un intervalo regular (por 
+                        ejemplo, un número establecido de veces por segundo), hablemos sobre para qué son útiles y observe su Problemas 
+                        inherentes.</dd>
 
-                <p class="post-text">Aut doloribus maiores quaerat consequuntur sint enim alias, culpa, 
-                    deleniti iste necessitatibus laboriosam expedita minus eveniet perferendis accusamus 
-                    sequi autem? Tenetur laborum sed excepturi modi praesentium, magnam nam? Deserunt, 
-                    odio.</p>
+                    <dt>Manejo de operaciones asincrónas con Promises</dt>
+                    <dd>Las promesas son una característica relativamente nueva de JavaScript que le permite diferir más acciones hasta 
+                        que la acción anterior se haya completado o responder en caso de tener una falla o error durante su ejecución. 
+                        Esto es realmente útil para configurar una secuencia de operaciones para que funcione correctamente. Este artículo 
+                        te muestra cómo funcionan las promesas, dónde las verá en uso en una WebAPI y cómo escribir las tuyas de la manera 
+                        adecuada.</dd>
 
-                <p class="post-text">Debitis unde fuga itaque quisquam pariatur recusandae animi, 
-                    explicabo nam, nemo ut non, tempore quod eveniet maxime? Ex culpa nobis fugiat rem. 
-                    Pariatur numquam quae accusamus quo non harum nihil.</p>
+                    <dt>Hacer la programación asincróna más fácil con async y await</dt>
+                    <dd>Las promesas pueden ser algo complejas de configurar y comprender, por lo que los navegadores modernos han 
+                        implementado funciones async y el operador de await. El primero permite que las funciones estándar se comporten 
+                        implícitamente de forma asíncrona con las promesas, mientras que el segundo puede usarse dentro de las funciones 
+                        async para esperar las promesas antes de que la función continúe. Esto hace que las promesas de encadenamiento 
+                        sean más simples y fáciles de leer.</dd>
+
+                    <dt>Elegir el enfoque correcto</dt>
+                    <dd>Para finalizar este módulo, consideraremos las diferentes técnicas y características de codificación que hemos 
+                        discutido a lo largo de todo, y veremos cuáles deberias usar cuando, con recomendaciones y recordatorios de 
+                        dificultades comunes, sea lo más apropiado.</dd>
+                </dl>
+
+                <h3>Ver también</h3>
+
+                <p class="post-text"><a href="https://eloquentjavascript.net/11_async.html" target="_blank" noopener noreferrer>Asynchronous 
+                Programming</a> from the fantastic <a href="https://eloquentjavascript.net/" target="_blank" noopener noreferrer>Eloquent 
+                JavaScript online book by Marijn Haverbeke.</a></p>
             </article>
         </main>
 

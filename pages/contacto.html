@@ -55,7 +55,7 @@
         </nav>
 
         <main class="row">
-            <form action="#" method="post">
+            <form action="#" method="post" id="formaContacto">
                 <div class="mb-3">
                     <label for="contactoNombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="contactoNombre" aria-describedby="ayudaNombres">
@@ -68,9 +68,11 @@
                   <div id="ayudaEmail" class="form-text">Con tu correo electrónico podemos responder tus mensajes.</div>
                 </div>
 
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="contactoRespuestaCheck">
-                  <label class="form-check-label" for="contactoRespuestaCheck">Quiero que me respondan</label>
+                <div class="choice-container">
+                    <div class="choice-row">
+                      <button id="contactoRespuestaCheck" type="button" class="ms-checkbox" role="switch" aria-checked="false"></button>
+                      <label class="form-check-label" for="contactoRespuestaCheck">Quiero que me respondan</label>
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -137,6 +139,8 @@
             </hgroup>
         </footer>
     </div>
+
+    <script src="../js/eventhandler.js"></script>
 
     <!-- Paquete Bootstrap / Popper. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

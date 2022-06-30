@@ -5,6 +5,11 @@
 @import "utilities/colors";
 @import "utilities/mixin";
 @import "partials/login";
+@import "partials/checkbox";
+@import "partials/contactForm";
+@import "partials/multi_bg_example";
+@import "partials/blog";
+@import "partials/nosotros";
 
 // Fuentes de Google Fonts: sans-serif (Lato) y serif (Arvo)
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
@@ -16,6 +21,15 @@ body {
     background-color: map-get($map: $colors, $key: "cultured");
     color: map-get($colors, "eerie-black");
     font-family: 'Lato','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .brand-name {
+        font-weight: 700;
+        font-style: italic;
+        color: map-get($map: $colors, $key: "yellow-green-crayola");
+        background: map-get($map: $colors, $key: "independence");
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
 
     // Estrellas de calificación debajo de las cards.
     .bi {
@@ -53,6 +67,7 @@ body {
                 .main-title {
                     display: none;
                     margin: 1rem;
+                    color: map-get($map: $colors, $key: "yellow-green-crayola");
                 }
             }
 

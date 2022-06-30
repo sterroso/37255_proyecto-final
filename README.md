@@ -1,40 +1,30 @@
-# TERCERA ENTREGA DEL PROYECTO FINAL
+# ENTREGA DEL PROYECTO FINAL
 
-El proyecto completo deberá visibilizarse de manera correcta en dispositivos mobile
-y desktop. El mismo deberá estar configurado y con código SASS aplicado. Además
-deberá mostrar uso de la correcta aplicación del SEO. La entrega deberá estar subida
-al servidor.
+Deberás entregar **la versión final de tu sitio cargada al servidor con acceso desde
+la web, aplicando cada una de las características vistas en el transcurso del curso:
+HTML, CSS, aplicación del framework y SEO,** correspondiente a la entrega final de
+tu proyecto.
 
 ## Formato
 
-Archivos .json en carpeta comprimida + link al repositorio en GitHub. Incluir apellido
-en el nombre del archivo (ej. "Nombre Proyecto+Apellido").
-
-## Sugerencia
-
-Activar comentarios en el archivo.
+Link al sitio web cargado en el servidor.
 
 ## Estructura final de la web
 
-**Objetivos generales:**
+Respetando los criterios trabajados respecto a legibilidad, adaptación al framework,
+uso de etiquetas y prácticas de SEO.
 
-1. Estructura prólija y limpia:
-    > Realizar una estructura del HTML con buena indentación, espacios prólijos, y
-      comentarios siendo usados para comentar secciones y no para ocultar código.
+**Formato**: Archivos HTML.
 
-**Objetivos específicos:**
+## Estilo final de la web
 
-1. Maqueta de la web en base al framework elegido:
-    > Agregar elementos HTML según necesidades de armar contenedores o elementos web
-      determinados, a través del código del framework elegido y la documentación del
-      mismo.
+Aplicando los criterios trabajados respecto a estructura visual, diseño atractivo y
+responsive, y reciclado de código.
 
-**Se debe entregar:**
+**Formato**: Achivos CSS+SASS ó SCSS.
 
-- *Maquetado de la web*: las estructuras maquetan a la web en base al framework elegido,
-  haciendo usos de clases utilitarias para armar grillas, elementos web y estilos propios
-  del framework, además del HTML de contenido. En caso de no elegir framework, los
-  elementos respetan una cierta maqueta propia.
-- *Páginas*: todas las páginas tienen el contenido estructurado y el estilo linkeado.
-  También tiene que tener agregadas las diferentes librerías de Javascript y CSS
-  pertinentes al framework.
+## Subida al servidor
+
+Utilizar WebHost000 o cualquier servicio de hostingpara poner el sitio web online.
+
+**Formato**: Link al sitio web cargado en el servidor.

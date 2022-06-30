@@ -1,0 +1,59 @@
+// Estilos de la página de blog.
+
+// Acceso a la variables de colores.
+@use "../utilities/colors";
+
+article.post {
+    margin-top: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+    box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.25), 0px 8px 16px -8px rgba(0, 0, 0, 0.3);
+
+    h2.post-title {
+        background-color: map-get($map: $colors, $key: "camel");
+        color: map-get($map: $colors, $key: "eerie-black");
+        padding: 1rem;
+    }
+
+    .post-image {
+        width: 100%;
+    }
+
+    dl {
+        dd {
+            margin-left: 1rem;
+        }
+    }
+}
+
+.code-text {
+    background-color: map-get($map: $colors, $key: "eerie-black");
+    color: map-get($map: $colors, $key: "cultured");
+    padding: 1rem 0.5rem;
+}
+
+.tag-start-end,
+.style-class-name {
+    color: map-get($map: $colors, $key: "yellow-green-crayola");
+}
+
+.tag-attribute-key,
+.style-attribute-key {
+    color: map-get($map: $colors, $key: "yellow-orange");
+}
+
+.tag-attribute-value,
+.style-attribute-value {
+    color: map-get($map: $colors, $key: "crimson");
+}
+
+.style-function-name {
+    color: map-get($map: $colors, $key: "forest-green-crayola");
+}
+
+.style-function-parameter {
+    color: map-get($map: $colors, $key: "lilac-luster");
+}
+
+.style-units {
+    color: map-get($map: $colors, $key: "amaranth-pink");
+}
